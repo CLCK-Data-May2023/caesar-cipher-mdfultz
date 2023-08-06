@@ -12,6 +12,7 @@ starting_message = input('Please enter a sentence: ')
 for character in starting_message:
     #check for special character
     if character.isalpha():
+        #convert character to lower case and shift
         shift_letter = ord(character.lower()) + cipher_shift
         if shift_letter > 122:
             shift_letter -=26
